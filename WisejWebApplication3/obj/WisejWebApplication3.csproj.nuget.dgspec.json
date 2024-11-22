@@ -56,6 +56,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.*, )"
@@ -89,6 +93,10 @@
         "net48": {
           "targetAlias": "net48",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.*, )"
