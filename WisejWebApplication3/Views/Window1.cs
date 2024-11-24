@@ -171,7 +171,7 @@ namespace WisejWebApplication3
             TextBox textBox = (TextBox)sender;
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
-                SetError(textBox, "City Field is required.");
+                SetError(textBox, "City is required.");
             }
             else
             {

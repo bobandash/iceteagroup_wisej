@@ -66,7 +66,7 @@ namespace WisejWebApplication3
             this.ZipField.Location = new System.Drawing.Point(27, 322);
             this.ZipField.Name = "ZipField";
             this.ZipField.Size = new System.Drawing.Size(271, 53);
-            this.ZipField.TabIndex = 4;
+            this.ZipField.TabIndex = 5;
             this.ZipField.Validating += new System.ComponentModel.CancelEventHandler(this.Zip_Validating);
             // 
             // EmailField
@@ -76,7 +76,7 @@ namespace WisejWebApplication3
             this.EmailField.Location = new System.Drawing.Point(27, 86);
             this.EmailField.Name = "EmailField";
             this.EmailField.Size = new System.Drawing.Size(271, 53);
-            this.EmailField.TabIndex = 2;
+            this.EmailField.TabIndex = 1;
             this.EmailField.Validating += new System.ComponentModel.CancelEventHandler(this.Email_Validating);
             // 
             // contextMenu1
@@ -92,7 +92,7 @@ namespace WisejWebApplication3
             this.StreetField.Location = new System.Drawing.Point(27, 145);
             this.StreetField.Name = "StreetField";
             this.StreetField.Size = new System.Drawing.Size(271, 53);
-            this.StreetField.TabIndex = 1;
+            this.StreetField.TabIndex = 2;
             this.StreetField.Validating += new System.ComponentModel.CancelEventHandler(this.Street_Validating);
             // 
             // CountryField
@@ -103,7 +103,7 @@ namespace WisejWebApplication3
             this.CountryField.Name = "CountryField";
             this.CountryField.RightToLeft = Wisej.Web.RightToLeft.No;
             this.CountryField.Size = new System.Drawing.Size(271, 53);
-            this.CountryField.TabIndex = 3;
+            this.CountryField.TabIndex = 4;
             this.CountryField.Validating += new System.ComponentModel.CancelEventHandler(this.Country_Validating);
             // 
             // flowLayoutPanel1
@@ -120,7 +120,7 @@ namespace WisejWebApplication3
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new Wisej.Web.Padding(24);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(325, 446);
-            this.flowLayoutPanel1.TabIndex = 6;
+            this.flowLayoutPanel1.TabIndex = 7;
             // 
             // AddOrganizationBtn
             // 
@@ -132,7 +132,7 @@ namespace WisejWebApplication3
             this.AddOrganizationBtn.Margin = new Wisej.Web.Padding(3, 12, 3, 3);
             this.AddOrganizationBtn.Name = "AddOrganizationBtn";
             this.AddOrganizationBtn.Size = new System.Drawing.Size(271, 37);
-            this.AddOrganizationBtn.TabIndex = 5;
+            this.AddOrganizationBtn.TabIndex = 6;
             this.AddOrganizationBtn.Text = "Add Organization";
             this.AddOrganizationBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
@@ -145,7 +145,7 @@ namespace WisejWebApplication3
             this.CityField.Location = new System.Drawing.Point(27, 204);
             this.CityField.Name = "CityField";
             this.CityField.Size = new System.Drawing.Size(271, 53);
-            this.CityField.TabIndex = 6;
+            this.CityField.TabIndex = 3;
             this.CityField.Validating += new System.ComponentModel.CancelEventHandler(this.CityField_Validating);
             // 
             // AddOrganization
