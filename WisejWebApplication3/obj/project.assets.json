@@ -28,6 +28,15 @@
           "buildTransitive/EntityFramework.targets": {}
         }
       },
+      "PostalCodes/3.1.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/PostalCodes.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/PostalCodes.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.9.0": {
         "type": "package",
         "compile": {
@@ -138,6 +147,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "PostalCodes/3.1.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/PostalCodes.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/PostalCodes.dll": {}
         }
       },
       "runtime.native.System.Data.SqlClient.sni/4.4.0": {
@@ -633,6 +651,21 @@
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "PostalCodes/3.1.0.7": {
+      "sha512": "v+a09zhcv+MoY2Jb1Y+mdOg6LdoRqqwlrfXwPPagHySjbiM7Xafu+PY3adRr9myy2HqRO9KGYGswyAMW2uWlRQ==",
+      "type": "package",
+      "path": "postalcodes/3.1.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/PostalCodes.dll",
+        "lib/net8.0/PostalCodes.dll",
+        "lib/netcoreapp3.1/PostalCodes.dll",
+        "lib/netstandard2.0/PostalCodes.dll",
+        "postalcodes.3.1.0.7.nupkg.sha512",
+        "postalcodes.nuspec"
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
@@ -1193,11 +1226,13 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "EntityFramework >= 6.5.1",
+      "PostalCodes >= 3.1.0.7",
       "System.Data.SqlClient >= 4.*",
       "Wisej-3 >= 3.5.*"
     ],
     "net9.0": [
       "EntityFramework >= 6.5.1",
+      "PostalCodes >= 3.1.0.7",
       "System.Data.SqlClient >= 4.*",
       "Wisej-3 >= 3.5.*"
     ]
@@ -1262,6 +1297,10 @@
             "target": "Package",
             "version": "[6.5.1, )"
           },
+          "PostalCodes": {
+            "target": "Package",
+            "version": "[3.1.0.7, )"
+          },
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.*, )"
@@ -1298,6 +1337,10 @@
           "EntityFramework": {
             "target": "Package",
             "version": "[6.5.1, )"
+          },
+          "PostalCodes": {
+            "target": "Package",
+            "version": "[3.1.0.7, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",

@@ -10,8 +10,10 @@ namespace WisejWebApplication3
         /// </summary>
         static void Main()
         {
-            Window1 window = new Window1();
-            window.Show();
+            Homepage homepage = new Homepage();
+            homepage.Show();
+            /*Form window = new Form();
+            window.Show();*/
         }
 
         //

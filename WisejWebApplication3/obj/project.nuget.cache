@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EFtCRe3Yk0c=",
+  "dgSpecHash": "ZAKsdD001Iw=",
   "success": true,
   "projectFilePath": "C:\\Users\\bruce\\source\\repos\\WisejWebApplication3\\WisejWebApplication3\\WisejWebApplication3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruce\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
     "C:\\Users\\bruce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\bruce\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\bruce\\.nuget\\packages\\postalcodes\\3.1.0.7\\postalcodes.3.1.0.7.nupkg.sha512",
     "C:\\Users\\bruce\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\bruce\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\bruce\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
