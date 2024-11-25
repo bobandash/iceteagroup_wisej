@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -40,7 +41,7 @@ namespace WisejWebApplication3
 
         public string CountryCode { get; set; }
 
-        public ICollection<Staff> Staff { get; set; }
+        public virtual ICollection<Staff> Staff { get; set; } = new List<Staff>();
     }
 
     public class Staff
@@ -58,6 +59,8 @@ namespace WisejWebApplication3
 
         public string Email { get; set; }
 
-        public Organization Organization { get; set; }
+        public int OrganizationId { get; set; }
+
+        public virtual Organization Organization { get; set; }
     }
 }

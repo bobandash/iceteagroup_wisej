@@ -16,28 +16,28 @@ namespace WisejWebApplication3
 {
     public partial class AddOrganization : Form
     {
-        private ErrorProvider errorProvider;
+        private ErrorProvider ErrorProvider;
         public event EventHandler OrganizationAdded;
 
         public AddOrganization()
         {
             InitializeComponent();
-            errorProvider = new ErrorProvider();
-            errorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
+            ErrorProvider = new ErrorProvider();
+            ErrorProvider.BlinkStyle = ErrorBlinkStyle.NeverBlink;
         }
 
 
         private void SetError(TextBox textBox, String errorMsg)
         {
             textBox.BackColor = Color.MistyRose;
-            errorProvider.SetError(textBox,errorMsg);
-            errorProvider.SetIconAlignment(textBox, ErrorIconAlignment.MiddleRight);
+            ErrorProvider.SetError(textBox,errorMsg);
+            ErrorProvider.SetIconAlignment(textBox, ErrorIconAlignment.MiddleRight);
         }
 
         private void ClearError(TextBox textBox)
         {
             textBox.BackColor = Color.White;
-            errorProvider.SetError(textBox, "");
+            ErrorProvider.SetError(textBox, "");
         }
 
 
@@ -137,36 +137,6 @@ namespace WisejWebApplication3
             }
         }
 
-        private static bool IsEmail(string email)
-        {
-            try
-            {
-                MailAddress m = new MailAddress(email);
-                return true;
-            }
-            catch (FormatException)
-            {
-                return false;
-            }
-        }
-
-        private void Email_Validating(object sender, CancelEventArgs e)
-        {
-            TextBox textBox = (TextBox)sender;
-            if (string.IsNullOrWhiteSpace(textBox.Text))
-            {
-                SetError(textBox, "Email is required.");
-            }
-            else if (!IsEmail(textBox.Text))
-            {
-                SetError(textBox, "Email is not valid.");
-            }
-            else
-            {
-                ClearError(textBox);
-            }
-        }
-
 
         private void CityField_Validating(object sender, CancelEventArgs e)
         {
@@ -185,7 +155,7 @@ namespace WisejWebApplication3
         private async void AddBtn_Click(object sender, EventArgs e)
         {
             ValidateChildren();
-            if (errorProvider.HasErrors)
+            if (ErrorProvider.HasErrors)
             {
                 MessageBox.Show("Cannot add organization until errors are resolved.");
                 return;

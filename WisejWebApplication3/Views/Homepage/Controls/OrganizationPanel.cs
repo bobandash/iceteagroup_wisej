@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using Wisej.Web;
 using WisejWebApplication3.Services;
+using WisejWebApplication3.Views.Employees;
 
 namespace WisejWebApplication3.Views.Homepage.Controls
 {
@@ -26,7 +27,7 @@ namespace WisejWebApplication3.Views.Homepage.Controls
             label1.Text = organization.Name;
             label2.Text = organization.Street;
             label3.Text = $"{organization.City} {organization.CountryCode} {organization.Zip}";
-            label4.Text = $"{organization.Staff?.Count ?? 0} Employees";
+            label4.Text = $"{organization.Staff.Count} Employees";
         }
 
         private void editBtn_Click(object sender, EventArgs e)
@@ -57,7 +58,19 @@ namespace WisejWebApplication3.Views.Homepage.Controls
 
         private void ViewEmployeesBtn_Click(object sender, EventArgs e)
         {
-            // Application.OpenPages().Show()
+            var page = new EmployeePage(Organization);
+            page.Name = "EmployeePage";
+            page.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exampleOrganization_PanelCollapsed(object sender, EventArgs e)
+        {
+
         }
     }
 }

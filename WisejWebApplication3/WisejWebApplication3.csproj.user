@@ -2,13 +2,25 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Views\Employees\Controls\AddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Employees\Controls\EditStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Employees\Controls\StaffPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Views\Employees\EmployeePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Homepage\Controls\OrganizationPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Views\Homepage\Controls\EditOrganization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Homepage\Homepage.cs">
+    <Compile Update="Views\Homepage\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Homepage\Controls\AddOrganization.cs">
@@ -16,7 +28,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Views\Homepage\Homepage.resx">
+    <EmbeddedResource Update="Views\Homepage\HomePage.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

@@ -143,7 +143,7 @@ namespace WisejWebApplication3
             TextBox textBox = (TextBox)sender;
             if (string.IsNullOrWhiteSpace(textBox.Text))
             {
-                SetError(textBox, "Name is required.");
+                SetError(textBox, "Street is required.");
             }
             else
             {

@@ -18,6 +18,15 @@ namespace WisejWebApplication3
         public Homepage()
         {
             InitializeComponent();
+            this.VisibleChanged += Homepage_VisibleChanged;
+        }
+
+        private async void Homepage_VisibleChanged(object sender, EventArgs e)
+        {
+            if (this.Visible) 
+            {
+                await SetupOrganizationComponents();
+            }
         }
 
         private async void Homepage_Load(object sender, EventArgs e)

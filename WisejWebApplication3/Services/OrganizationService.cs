@@ -11,7 +11,9 @@ namespace WisejWebApplication3.Services
         {
             using (var context = new MyDbContext())
             {
-                return await context.Organizations.ToListAsync();
+                return await context.Organizations
+                    .Include(o => o.Staff)
+                    .ToListAsync();
             }
         }
 
