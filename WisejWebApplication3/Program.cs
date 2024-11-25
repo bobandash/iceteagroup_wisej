@@ -12,8 +12,6 @@ namespace WisejWebApplication3
         {
             Homepage homepage = new Homepage();
             homepage.Show();
-            /*Form window = new Form();
-            window.Show();*/
         }
 
         //

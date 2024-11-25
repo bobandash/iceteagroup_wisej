@@ -10,12 +10,14 @@ using Wisej.Web;
 using PostalCodes;
 using System.Linq;
 using Wisej.Web.VisualBasic;
+using WisejWebApplication3.Services;
 
 namespace WisejWebApplication3
 {
     public partial class AddOrganization : Form
     {
         private ErrorProvider errorProvider;
+        public event EventHandler OrganizationAdded;
 
         public AddOrganization()
         {
@@ -180,7 +182,7 @@ namespace WisejWebApplication3
         }
 
 
-        private void AddBtn_Click(object sender, EventArgs e)
+        private async void AddBtn_Click(object sender, EventArgs e)
         {
             ValidateChildren();
             if (errorProvider.HasErrors)
@@ -188,27 +190,24 @@ namespace WisejWebApplication3
                 MessageBox.Show("Cannot add organization until errors are resolved.");
                 return;
             }
-           
+
             try
             {
-                using (var context = new MyDbContext())
+                var organization = new Organization
                 {
-                    var organization = new Organization
-                    {
-                        Name = NameField.Text,
-                        Street = StreetField.Text,
-                        City = CityField.Text,
-                        CountryCode = CountryField.Text,
-                        Zip = ZipField.Text,
-                    };
-                    context.Organizations.Add(organization);
-                    context.SaveChanges();
-                    MessageBox.Show("Organization has been successfully added!");
-                    this.Close();
-                }
+                    Name = NameField.Text,
+                    Street = StreetField.Text,
+                    City = CityField.Text,
+                    CountryCode = CountryField.Text,
+                    Zip = ZipField.Text,
+                };
+                await OrganizationService.AddOrganization(organization);
+                MessageBox.Show("Organization has been successfully added!");
+                OrganizationAdded?.Invoke(this, EventArgs.Empty);
+                this.Close();
             } 
             catch(Exception ex) {
-                MessageBox.Show($"Error adding organization to database: {ex.Message}.");
+                MessageBox.Show($"Error adding organization to database: {ex.Message}");
             }
         }
     }

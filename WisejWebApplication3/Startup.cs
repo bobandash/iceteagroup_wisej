@@ -1,7 +1,9 @@
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Wisej.Core;
+using WisejWebApplication3.Services;
 
 namespace WisejWebApplication3
 {
@@ -27,6 +29,7 @@ namespace WisejWebApplication3
 
             var app = builder.Build();
             app.UseWisej();
+
             app.UseFileServer();
             app.Run();
         }
