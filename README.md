@@ -1,4 +1,4 @@
-<h1 align="center">Wisej.Net TakeHome</h1>
+# Wisej.Net TakeHome
 
 ## About The Project
 
