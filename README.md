@@ -1,4 +1,4 @@
-<h3 align="center">Wisej.Net TakeHome</h3>
+<h1 align="center">Wisej.Net TakeHome</h1>
 
 ## About The Project
 
