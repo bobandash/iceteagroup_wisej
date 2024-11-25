@@ -148,7 +148,6 @@ namespace WisejWebApplication3
             this.Name = "Homepage";
             this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
             this.Size = new System.Drawing.Size(994, 598);
-            this.Load += new System.EventHandler(this.Homepage_Load);
             this.organizationTable.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

@@ -29,10 +29,6 @@ namespace WisejWebApplication3
             }
         }
 
-        private async void Homepage_Load(object sender, EventArgs e)
-        {
-            await SetupOrganizationComponents();
-        }
 
         private async void RefreshHomePage(object sender, EventArgs e)
         {
