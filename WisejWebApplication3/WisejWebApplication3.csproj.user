@@ -5,10 +5,13 @@
     <Compile Update="Views\Homepage\Controls\OrganizationPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Views\Homepage\Controls\EditOrganization.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Homepage\Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Homepage\Controls\Window1.cs">
+    <Compile Update="Views\Homepage\Controls\AddOrganization.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

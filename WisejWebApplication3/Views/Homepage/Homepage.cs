@@ -14,6 +14,7 @@ namespace WisejWebApplication3
     public partial class Homepage : Page
     {
         private AddOrganization AddOrganizationWindow;
+        private EditOrganization EditOrganizationWindow;
         public Homepage()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace WisejWebApplication3
             List<Organization> organizations = await OrganizationService.GetOrganizations();
             foreach (Organization organization in organizations)
             {
-                var organizationPanel = new OrganizationPanel(organization);
+                var organizationPanel = new OrganizationPanel(organization, EditOrganizationWindow, RefreshHomePage);
                 organizationPanel.OrganizationRemoved += RefreshHomePage;
                 this.organizationTable.Controls.Add(organizationPanel);
             }

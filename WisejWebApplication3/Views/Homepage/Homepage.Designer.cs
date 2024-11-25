@@ -74,7 +74,7 @@ namespace WisejWebApplication3
             this.organizationTable.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Absolute, 200F));
             this.organizationTable.ShowCloseButton = false;
             this.organizationTable.ShowHeader = true;
-            this.organizationTable.Size = new System.Drawing.Size(946, 599);
+            this.organizationTable.Size = new System.Drawing.Size(968, 598);
             this.organizationTable.TabIndex = 1;
             this.organizationTable.Text = "Address Manager";
             // 
@@ -99,7 +99,7 @@ namespace WisejWebApplication3
             this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles7"))));
             this.panel3.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("panel3.ResponsiveProfiles8"))));
             this.panel3.ShowCloseButton = false;
-            this.panel3.Size = new System.Drawing.Size(443, 194);
+            this.panel3.Size = new System.Drawing.Size(454, 194);
             this.panel3.TabIndex = 0;
             // 
             // addOrganizationBtn
@@ -117,7 +117,7 @@ namespace WisejWebApplication3
             this.addOrganizationBtn.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("addOrganizationBtn.ResponsiveProfiles2"))));
             this.addOrganizationBtn.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("addOrganizationBtn.ResponsiveProfiles3"))));
             this.addOrganizationBtn.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("addOrganizationBtn.ResponsiveProfiles4"))));
-            this.addOrganizationBtn.Size = new System.Drawing.Size(441, 192);
+            this.addOrganizationBtn.Size = new System.Drawing.Size(452, 192);
             this.addOrganizationBtn.TabIndex = 2;
             this.addOrganizationBtn.Text = "Add An Organization";
             this.addOrganizationBtn.UseMnemonic = false;
@@ -136,7 +136,7 @@ namespace WisejWebApplication3
             this.flexLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel1.ResponsiveProfiles"))));
             this.flexLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel1.ResponsiveProfiles1"))));
             this.flexLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel1.ResponsiveProfiles2"))));
-            this.flexLayoutPanel1.Size = new System.Drawing.Size(946, 599);
+            this.flexLayoutPanel1.Size = new System.Drawing.Size(968, 598);
             this.flexLayoutPanel1.TabIndex = 1;
             // 
             // Homepage
@@ -147,7 +147,7 @@ namespace WisejWebApplication3
             this.Controls.Add(this.flexLayoutPanel1);
             this.Name = "Homepage";
             this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
-            this.Size = new System.Drawing.Size(946, 599);
+            this.Size = new System.Drawing.Size(968, 598);
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.organizationTable.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

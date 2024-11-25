@@ -210,5 +210,10 @@ namespace WisejWebApplication3
                 MessageBox.Show($"Error adding organization to database: {ex.Message}");
             }
         }
+
+        private void flowLayoutPanel1_PanelCollapsed(object sender, EventArgs e)
+        {
+
+        }
     }
 }

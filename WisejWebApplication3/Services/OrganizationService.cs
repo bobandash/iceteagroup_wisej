@@ -47,7 +47,12 @@ namespace WisejWebApplication3.Services
                 {
                     throw new ArgumentException($"Could not edit organization. Organization with ID {id} not found");
                 }
-                context.Entry(organization).CurrentValues.SetValues(updatedOrganization);
+                // TODO: Figure out better way to update organization; this will not work if more fields are added
+                organization.Name = updatedOrganization.Name;
+                organization.Street = updatedOrganization.Street;
+                organization.City = updatedOrganization.City;
+                organization.CountryCode = updatedOrganization.CountryCode;
+                organization.Zip = updatedOrganization.Zip;
                 await context.SaveChangesAsync();
             }
         }
