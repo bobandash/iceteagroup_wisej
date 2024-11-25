@@ -26,6 +26,7 @@ namespace WisejWebApplication3.Views.Homepage.Controls
             label1.Text = organization.Name;
             label2.Text = organization.Street;
             label3.Text = $"{organization.City} {organization.CountryCode} {organization.Zip}";
+            label4.Text = $"{organization.Staff?.Count ?? 0} Employees";
         }
 
         private void editBtn_Click(object sender, EventArgs e)
@@ -51,6 +52,12 @@ namespace WisejWebApplication3.Views.Homepage.Controls
             catch {
                 MessageBox.Show("Failed to remove organization.");
             }
+        }
+
+
+        private void ViewEmployeesBtn_Click(object sender, EventArgs e)
+        {
+            // Application.OpenPages().Show()
         }
     }
 }
